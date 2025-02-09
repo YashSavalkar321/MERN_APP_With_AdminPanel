@@ -10,14 +10,14 @@ const connectDb = require("./utils/db");
 const errorMiddleware = require("./middleware/error-middleware");
 
 
-const corsOptions ={
-  origin: "http://localhost:5173",
-  methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  credentials: true,
-};
+// const corsOptions ={
+//   origin: "http://localhost:5173",
+//   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
+//   credentials: true,
+// };
 // middleware routes for authentication and authorization routes
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);

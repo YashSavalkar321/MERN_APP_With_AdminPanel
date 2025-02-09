@@ -31,9 +31,9 @@ app.use("/api/admin", adminRoute);
 app.use(errorMiddleware);
 
 // alternative way of creating routes for authorization
-app.get("/", (req,res)=>{
-    res.status(200).send("Hello World!");
-});
+// app.get("/", (req,res)=>{
+//     res.status(200).send("Hello World!");
+// });
 
 // app.get("/register", (req,res)=>{
 //     res.status(200).send("Hello from register page!");

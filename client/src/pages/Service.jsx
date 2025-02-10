@@ -25,7 +25,7 @@ export default function Service() {
             </h1>
           </div>
 
-          {services.length === 0 ? (
+          {/* {services.length() === 0 ? (
             <div className="text-center py-20">
               <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md mx-auto">
                 <p className="text-gray-600 text-lg">
@@ -33,7 +33,7 @@ export default function Service() {
                 </p>
               </div>
             </div>
-          ) : (
+          ) : ( */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((currElem, index) => {
                 const { provider, description, price, service, image } = currElem;
@@ -83,7 +83,7 @@ export default function Service() {
                 );
               })}
             </div>
-          )}
+          {/* )} */}
         </div>
       </section>
     </main>

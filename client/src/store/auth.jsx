@@ -70,12 +70,16 @@ export const AuthProvider = ({children}) =>{
             });
             if(response.ok){
                 const data= await response.json();
-                console.log(data.msg);
-                setServices(data.msg);
+                console.log(data.services);
+                setServices(data.services);
+            }
+            else {
+                setServices([]);
             }
             
         } catch (error) {
             console.log("Error Fetching Services");
+            setServices([]);
         }
     };
 

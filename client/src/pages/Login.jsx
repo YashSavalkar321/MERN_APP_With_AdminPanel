@@ -52,8 +52,8 @@ export default function Login() {
       }
     } catch (error) {
       console.log("login ", error);
+      
     }
-    console.log(user);
   };
 
   return (
